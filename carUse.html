@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>CHOOSE TITLE</title>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+		<!-- <link rel = "stylesheet" href = "yoga.css"> -->
+	</head>
+
+	<body>
+		<header>
+			<h1>Use a Car Share</h1>
+		</header>
+		
+		<nav>
+			<a href = index.html>Main Menu</a> &nbsp;
+			<a href = bikeRent.html>Using a Bike</a> &nbsp;
+			<a href = busUse.html>Using a Bus</a> &nbsp;
+			<a href = carUse.html>Using a Car Share</a> &nbsp;
+			<a href = about.html>About Us</a> &nbsp;
+		</nav>
+		
+		<div>
+			<h1>Buses run between:</h1>
+			<h2>7:00AM – 9:00PM (Mon-Fri)</h2>
+		</div>
+
+	<form id="bookingForm">
+                        <div>
+						<label for="userName">Name:</label>
+                            <input class="form-control" type="text" accesskey="N" id="userName"
+                                   placeholder="Name" name="username" required>
+                        </div>
+					
+                    <div>
+					<label for="station">Where will you get picked up from:</label>
+                        <input class="form-control" type="text" id="current" accesskey="F"
+                            placeholder="From" name="destination" required>
+                        
+                    </div>
+					
+					<label for="station">Which Bus Station do you want to get to:</label>
+                        <input class="form-control" type="text" id="willBe" accesskey="D"
+                            placeholder="Destination" name="destination" required>
+                        
+                    </div>
+					
+					<div class="dropdownSelect p-0">
+					<label for="daychoise">What day would you be travelling:</label>
+                        <select class="form-control" id="daychoise" name="daychoise">
+                            <option disabled selected value="blank">--choose--</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                            <option value="sunday">Sunday</option>
+                        </select>
+                    </div>
+					
+					<div class="dropdownSelect p-0">
+					<label for="timetable">What time would you be travelling:</label>
+                        <select class="form-control" id="timetable" name="timeslot">
+                            <option disabled selected value="blank">--choose--</option>
+                            <option value="timeslot">01:00</option>
+							<option value="timeslot">02:00</option>
+							<option value="timeslot">03:00</option>
+							<option value="timeslot">04:00</option>
+							<option value="timeslot">05:00</option>
+							<option value="timeslot">06:00</option>
+							<option value="timeslot">07:00</option>
+							<option value="timeslot">08:00</option>
+							<option value="timeslot">09:00</option>
+							<option value="timeslot">10:00</option>
+							<option value="timeslot">12:00</option>
+							<option value="timeslot">13:00</option>
+							<option value="timeslot">14:00</option>
+							<option value="timeslot">15:00</option>
+							<option value="timeslot">16:00</option>
+							<option value="timeslot">17:00</option>
+							<option value="timeslot">18:00</option>
+							<option value="timeslot">19:00</option>
+							<option value="timeslot">20:00</option>
+							<option value="timeslot">22:00</option>
+							<option value="timeslot">23:00</option>
+                        </select>
+                    </div>
+    </form>
+	<button type="submit" id="submitButton">Confirm Booking</button>
+</div>
