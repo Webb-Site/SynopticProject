@@ -38,7 +38,7 @@
 					
                     <div>
 					<label for="station">Which Bus Station are you nearest to:</label>                        
-						<select class="form-control" id="station" name="busStationStart">
+						<select class="form-control" id="nearestStation" name="busStationStart">
                             <option disabled selected value="holder">--choose--</option>
                             <option value="1">Station 1</option>
                             <option value="2">Station 2</option>
@@ -49,7 +49,7 @@
 					
 					<div>
 					<label for="station">Which Bus Station do you want to get to:</label>
-                        <select class="form-control" id="station" name="busStationStart">
+                        <select class="form-control" id="station" name="busStationEnd">
                             <option disabled selected value="holder">--choose--</option>
                             <option value="1">Station 1</option>
                             <option value="2">Station 2</option>
@@ -101,12 +101,11 @@
 							<option value="24:00">24:00</option>
                         </select>
                     </div>
+	</fieldset>
     </form>
 	<button type="submit" id="submitButton">Confirm Ticket</button>
-	</fieldset>
 	</div>
 	</div>
 	<div class="img-column">
 	<img class="right" src="images/Bus_Map.png"/ id="map">
 	</div>
-</div>
