@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Bike Rental</title>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>- Take A Bike -</h1>
+		</header>
+		
+		<nav>
+			<a href = index.html>Main Menu &nbsp;│&nbsp;</a>
+			<a href = bikeRent.html>Using a Bike &nbsp;│&nbsp;</a>
+			<a href = busUse.html>Using a Bus &nbsp;│&nbsp;</a>
+			<a href = carUse.html>Using a Car Share &nbsp;│&nbsp;</a>
+			<a href = about.html>About Us</a>
+		</nav>
+		
+		<div class="container" id="set">
+		<div class="text-column">
+		<div id="available">
+			<h1>How many bikes are available at this time:</h1>
+			<h2>N/A</h2>
+		</div>
+
+	<form id="bookingForm" method='post' action='/submit-bike-form'>
+	<fieldset>
+					<div>
+					<label for="userName">Name:</label>
+						<input class="form-control" type="text" accesskey="N" id="userName"
+							   placeholder="Name" name="username" required>
+					</div>
+					
+                    <div>
+					<label for="station">Which Bike Station are you nearest to:</label>							
+						<select class="form-control" id="station" name="bikeStation">
+                            <option disabled selected value="holder">--choose--</option>
+                            <option value="1">Station 1</option>
+                            <option value="2">Station 2</option>
+                            <option value="3">Station 3</option>
+                            <option value="4">Station 4</option>
+                            <option value="5">Station 5</option>
+                        </select>
+                    </div>
+					
+					<div class="dropdownSelect p-0">
+					<label for="daychoise">What day would you need the Bike:</label>
+                        <select class="form-control" id="daychoise" name="daychoise">
+                            <option disabled selected value="holder">--choose--</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                            <option value="sunday">Sunday</option>
+                        </select>
+                    </div>
+					
+					<div class="dropdownSelect p-0">
+					<label for="timetable">What time would you prefer:</label>
+                        <select class="form-control" id="timetable" name="timeslot">
+                            <option disabled selected value="holder">--choose--</option>
+                            <option value="01:00">01:00</option>
+							<option value="02:00">02:00</option>
+							<option value="03:00">03:00</option>
+							<option value="04:00">04:00</option>
+							<option value="05:00">05:00</option>
+							<option value="06:00">06:00</option>
+							<option value="07:00">07:00</option>
+							<option value="08:00">08:00</option>
+							<option value="09:00">09:00</option>
+							<option value="10:00">10:00</option>
+							<option value="11:00">11:00</option>
+							<option value="12:00">12:00</option>
+							<option value="13:00">13:00</option>
+							<option value="14:00">14:00</option>
+							<option value="15:00">15:00</option>
+							<option value="16:00">16:00</option>
+							<option value="17:00">17:00</option>
+							<option value="18:00">18:00</option>
+							<option value="19:00">19:00</option>
+							<option value="20:00">20:00</option>
+							<option value="21:00">21:00</option>
+							<option value="22:00">22:00</option>
+							<option value="23:00">23:00</option>
+							<option value="24:00">24:00</option>
+                        </select>
+                    </div>
+    </form>
+	<button type="submit" id="submitButton">Confirm Rent</button>
+	</fieldset>
+	</div>
+	</div>
+	<div class="img-column">
+	<img class="right" src="images/Bike_Map.png"/ id="map">
+	</div>
+</div>
